@@ -1,0 +1,10 @@
+.array-container-bfs-dfs {
+  position: absolute;
+  left: 300px;
+  top: 50px;
+}
+
+.grid {
+  text-align: center;
+  display: grid;
+}
