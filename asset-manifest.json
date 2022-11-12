@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/AlgoViz/static/css/main.a77d6f2a.css",
+    "main.js": "/AlgoViz/static/js/main.0e496cce.js",
+    "static/media/Selection-Sort-Gif.webp": "/AlgoViz/static/media/Selection-Sort-Gif.2dc72dd2292ae4cf8bcf.webp",
+    "static/media/dfs.png": "/AlgoViz/static/media/dfs.d3f14c0da8d1e5cef846.png",
+    "static/media/bfs3.png": "/AlgoViz/static/media/bfs3.21752e3b0e81c365c066.png",
+    "static/media/bfs1.PNG": "/AlgoViz/static/media/bfs1.db94d8855eb393cdf176.PNG",
+    "static/media/Bubble-sort-example.gif": "/AlgoViz/static/media/Bubble-sort-example.3d9a8bc54ee1ce9c8fda.gif",
+    "static/media/Insertion-sort-example.gif": "/AlgoViz/static/media/Insertion-sort-example.0644989af3c99955cd9e.gif",
+    "static/media/Quicksort-example.gif": "/AlgoViz/static/media/Quicksort-example.1f34ac910005055a38e0.gif",
+    "static/media/Merge-sort-example.gif": "/AlgoViz/static/media/Merge-sort-example.274044dcc60eee46717f.gif",
+    "static/media/bst2.png": "/AlgoViz/static/media/bst2.a9a0ef51795f9bee15bc.png",
+    "static/media/bst1.png": "/AlgoViz/static/media/bst1.106b2d1f52475b483749.png",
+    "static/media/bst4.png": "/AlgoViz/static/media/bst4.b3594b7103474b43eea7.png",
+    "static/media/bst3.png": "/AlgoViz/static/media/bst3.26bdc1ef954181a2608c.png",
+    "static/media/bst5.png": "/AlgoViz/static/media/bst5.5b902622aa1459e12154.png",
+    "index.html": "/AlgoViz/index.html",
+    "main.a77d6f2a.css.map": "/AlgoViz/static/css/main.a77d6f2a.css.map",
+    "main.0e496cce.js.map": "/AlgoViz/static/js/main.0e496cce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a77d6f2a.css",
+    "static/js/main.0e496cce.js"
+  ]
+}
