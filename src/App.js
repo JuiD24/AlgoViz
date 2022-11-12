@@ -31,48 +31,60 @@ function App() {
           <Sidebar>
             <Routes>
               <Route path="/AlgoViz" element={<MainDash />} />
-              <Route path="/learn/bubble" element={<BubbleSortLearning />} />
-              <Route path="/learn/merge" element={<MergeSortLearning />} />
               <Route
-                path="/learn/selection"
+                path="/AlgoViz/learn/bubble"
+                element={<BubbleSortLearning />}
+              />
+              <Route
+                path="/AlgoViz/learn/merge"
+                element={<MergeSortLearning />}
+              />
+              <Route
+                path="/AlgoViz/learn/selection"
                 element={<SelectionSortLearning />}
               />
-              <Route path="/learn/insert" element={<InsertionSortLearning />} />
-              <Route path="/learn/quick" element={<QuickSortLearning />} />
-              <Route path="/learn/bfs" element={<BFSLearning />} />
-              <Route path="/learn/dfs" element={<DFSLearning />} />
-              <Route path="/learn/bst" element={<BSTLearning />} />
-              <Route path="/q1" element={<Quiz1 />} />
-              <Route path="/q2" element={<Quiz2 />} />
               <Route
-                path="/visualiser/merge"
+                path="/AlgoViz/learn/insert"
+                element={<InsertionSortLearning />}
+              />
+              <Route
+                path="/AlgoViz/learn/quick"
+                element={<QuickSortLearning />}
+              />
+              <Route path="/AlgoViz/learn/bfs" element={<BFSLearning />} />
+              <Route path="/AlgoViz/learn/dfs" element={<DFSLearning />} />
+              <Route path="/AlgoViz/learn/bst" element={<BSTLearning />} />
+              <Route path="/AlgoViz/q1" element={<Quiz1 />} />
+              <Route path="/AlgoViz/q2" element={<Quiz2 />} />
+              <Route
+                path="/AlgoViz/visualiser/merge"
                 element={<MergeSortingVisualiser />}
               />
               <Route
-                path="/visualiser/bubble"
+                path="/AlgoViz/visualiser/bubble"
                 element={<BubbleSortingVisualiser />}
               />
               <Route
-                path="/visualiser/selection"
+                path="/AlgoViz/visualiser/selection"
                 element={<SelectionSortingVisualiser />}
               />
               <Route
-                path="/visualiser/insertion"
+                path="/AlgoViz/visualiser/insertion"
                 element={<InsertionSortingVisualiser />}
               />
               <Route
-                path="/visualiser/quick"
+                path="/AlgoViz/visualiser/quick"
                 element={<QuickSortingVisualiser />}
               />
               <Route
-                path="/visualiser/dijkstra"
+                path="/AlgoViz/visualiser/dijkstra"
                 element={<PathfindingVisualizer />}
               />
               <Route
-                path="/visualiser/bst"
+                path="/AlgoViz/visualiser/bst"
                 element={<BinarySearchTreeVisualiser />}
               />
-              <Route path="/analytics" element={<Analytics />} />
+              <Route path="/AlgoViz/analytics" element={<Analytics />} />
             </Routes>
           </Sidebar>
         </Router>

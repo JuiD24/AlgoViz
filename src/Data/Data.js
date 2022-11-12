@@ -22,42 +22,42 @@ export const SidebarData = [
     subMenu: [
       {
         heading: "Bubble Sort",
-        path: "/learn/bubble",
+        path: "AlgoViz/learn/bubble",
         icon: UilBookOpen,
       },
       {
         heading: "Merge Sort",
-        path: "/learn/merge",
+        path: "AlgoViz/learn/merge",
         icon: UilBookOpen,
       },
       {
         heading: "Selection Sort",
-        path: "/learn/selection",
+        path: "AlgoViz/learn/selection",
         icon: UilBookOpen,
       },
       {
         heading: "Insertion Sort",
-        path: "/learn/insert",
+        path: "AlgoViz/learn/insert",
         icon: UilBookOpen,
       },
       {
         heading: "Quick Sort",
-        path: "/learn/quick",
+        path: "AlgoViz/learn/quick",
         icon: UilBookOpen,
       },
       {
         heading: "BFS",
-        path: "/learn/bfs",
+        path: "AlgoViz/learn/bfs",
         icon: UilBookOpen,
       },
       {
         heading: "DFS",
-        path: "/learn/dfs",
+        path: "AlgoViz/learn/dfs",
         icon: UilBookOpen,
       },
       {
         heading: "Binary Search Tree",
-        path: "/learn/bst",
+        path: "AlgoViz/learn/bst",
         icon: UilBookOpen,
       },
     ],
@@ -65,7 +65,7 @@ export const SidebarData = [
   {
     icon: UilQuestionCircle,
     heading: "Quiz 1",
-    path: "/q1",
+    path: "AlgoViz/q1",
   },
   {
     icon: UilPlayCircle,
@@ -74,37 +74,37 @@ export const SidebarData = [
     subMenu: [
       {
         heading: "Bubble Sort",
-        path: "/visualiser/bubble",
+        path: "AlgoViz/visualiser/bubble",
         icon: UilBookOpen,
       },
       {
         heading: "Merge Sort",
-        path: "/visualiser/merge",
+        path: "AlgoViz/visualiser/merge",
         icon: UilBookOpen,
       },
       {
         heading: "Selection Sort",
-        path: "/visualiser/selection",
+        path: "AlgoViz/visualiser/selection",
         icon: UilBookOpen,
       },
       {
         heading: "Insertion Sort",
-        path: "/visualiser/insertion",
+        path: "AlgoViz/visualiser/insertion",
         icon: UilBookOpen,
       },
       {
         heading: "Quick Sort",
-        path: "/visualiser/quick",
+        path: "AlgoViz/visualiser/quick",
         icon: UilBookOpen,
       },
       {
         heading: "DFS/BFS",
-        path: "/visualiser/dijkstra",
+        path: "AlgoViz/visualiser/dijkstra",
         icon: UilBookOpen,
       },
       {
         heading: "Binary Search Tree",
-        path: "/visualiser/bst",
+        path: "AlgoViz/visualiser/bst",
         icon: UilBookOpen,
       },
     ],
@@ -112,12 +112,12 @@ export const SidebarData = [
   {
     icon: UilQuestionCircle,
     heading: "Quiz 2",
-    path: "/q2",
+    path: "AlgoViz/q2",
   },
   {
     icon: UilChart,
     heading: "Analytics",
-    path: "/analytics",
+    path: "AlgoViz/analytics",
   },
 ];
 
