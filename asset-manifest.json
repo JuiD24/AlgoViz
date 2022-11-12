@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/AlgoViz/static/css/main.a77d6f2a.css",
-    "main.js": "/AlgoViz/static/js/main.0e496cce.js",
+    "main.js": "/AlgoViz/static/js/main.84eaa02e.js",
     "static/media/Selection-Sort-Gif.webp": "/AlgoViz/static/media/Selection-Sort-Gif.2dc72dd2292ae4cf8bcf.webp",
     "static/media/dfs.png": "/AlgoViz/static/media/dfs.d3f14c0da8d1e5cef846.png",
     "static/media/bfs3.png": "/AlgoViz/static/media/bfs3.21752e3b0e81c365c066.png",
@@ -17,10 +17,10 @@
     "static/media/bst5.png": "/AlgoViz/static/media/bst5.5b902622aa1459e12154.png",
     "index.html": "/AlgoViz/index.html",
     "main.a77d6f2a.css.map": "/AlgoViz/static/css/main.a77d6f2a.css.map",
-    "main.0e496cce.js.map": "/AlgoViz/static/js/main.0e496cce.js.map"
+    "main.84eaa02e.js.map": "/AlgoViz/static/js/main.84eaa02e.js.map"
   },
   "entrypoints": [
     "static/css/main.a77d6f2a.css",
-    "static/js/main.0e496cce.js"
+    "static/js/main.84eaa02e.js"
   ]
 }
