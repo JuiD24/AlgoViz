@@ -1,17 +1,26 @@
 import React from "react";
 import "./Quiz.css";
-import { questions } from "../Data/Data";
-import { useState } from "react";
+import { questions } from "../../Data/Data";
+import { useState, useEffect } from "react";
 
-const Quiz = () => {
+const Quiz1 = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
 
+  useEffect(() => {
+    if (JSON.parse(window.localStorage.getItem("score1")) > 0) {
+      setShowScore(true);
+      setScore(JSON.parse(window.localStorage.getItem("score1")));
+    }
+  }, []);
+
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
+      window.localStorage.setItem("score1", JSON.stringify(score + 1));
       setScore(score + 1);
     }
+    console.log(JSON.parse(window.localStorage.getItem("score1")));
 
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
@@ -33,7 +42,7 @@ const Quiz = () => {
             <div className="question-count">
               <span>Question {currentQuestion + 1}</span>/{questions.length}
             </div>
-            <div className="question-text">
+            <div className="question-text" style={{ whiteSpace: "pre-wrap" }}>
               {questions[currentQuestion].questionText}
             </div>
           </div>
@@ -53,4 +62,4 @@ const Quiz = () => {
   );
 };
 
-export default Quiz;
+export default Quiz1;

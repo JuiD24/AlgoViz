@@ -45,6 +45,21 @@ export const SidebarData = [
         path: "/learn/quick",
         icon: UilBookOpen,
       },
+      {
+        heading: "BFS",
+        path: "/learn/bfs",
+        icon: UilBookOpen,
+      },
+      {
+        heading: "DFS",
+        path: "/learn/dfs",
+        icon: UilBookOpen,
+      },
+      {
+        heading: "Binary Search Tree",
+        path: "/learn/bst",
+        icon: UilBookOpen,
+      },
     ],
   },
   {
@@ -102,7 +117,7 @@ export const SidebarData = [
   {
     icon: UilChart,
     heading: "Analytics",
-    path: "/a",
+    path: "/analytics",
   },
 ];
 
@@ -149,39 +164,290 @@ export const cardsData = [
 
 export const questions = [
   {
-    questionText: "What is the capital of France?",
+    questionText:
+      "What are the correct intermediate steps of the following data set when it is being sorted with the bubble sort?" +
+      "\n" +
+      "15,20,10,18",
     answerOptions: [
-      { answerText: "New York", isCorrect: false },
-      { answerText: "London", isCorrect: false },
-      { answerText: "Paris", isCorrect: true },
-      { answerText: "Dublin", isCorrect: false },
+      {
+        answerText: "15,10,20,18 -- 15,10,18,20 -- 10,15,18,20",
+        isCorrect: true,
+      },
+      {
+        answerText: "10, 20,15,18 -- 10,15,20,18 -- 10,15,18,20",
+        isCorrect: false,
+      },
+      {
+        answerText: "15,20,10,18 -- 15,10,20,18 -- 10,15,20,18 -- 10,15,18,20",
+        isCorrect: false,
+      },
+      {
+        answerText: "15,18,10,20 -- 10,18,15,20 -- 10,15,18,20 -- 10,15,18,20",
+        isCorrect: false,
+      },
     ],
   },
   {
-    questionText: "Who is CEO of Tesla?",
+    questionText:
+      "Which one of the following is the first step in a selection sort algorithm?",
     answerOptions: [
-      { answerText: "Jeff Bezos", isCorrect: false },
-      { answerText: "Elon Musk", isCorrect: true },
-      { answerText: "Bill Gates", isCorrect: false },
-      { answerText: "Tony Stark", isCorrect: false },
+      {
+        answerText: "The minimum value in the list is found.",
+        isCorrect: true,
+      },
+      {
+        answerText: "The maximum value in the list is found.",
+        isCorrect: false,
+      },
+      { answerText: "Adjacent elements are swapped.", isCorrect: false },
     ],
   },
   {
-    questionText: "The iPhone was created by which company?",
+    questionText: "A merge sort",
     answerOptions: [
-      { answerText: "Apple", isCorrect: true },
-      { answerText: "Intel", isCorrect: false },
-      { answerText: "Amazon", isCorrect: false },
-      { answerText: "Microsoft", isCorrect: false },
+      {
+        answerText: "Divides the unsorted array into 3 sublists of equal size",
+        isCorrect: false,
+      },
+      {
+        answerText: "Divides the unsorted array into 4 sublists of equal size",
+        isCorrect: false,
+      },
+      {
+        answerText: "Divides the unsorted array into 2 sublists of equal size",
+        isCorrect: true,
+      },
+      {
+        answerText: "Divides the unsorted array into 8 sublists of equal size",
+        isCorrect: false,
+      },
     ],
   },
   {
-    questionText: "How many Harry Potter books are there?",
+    questionText: "Which of the following is False about merge sort algorithm?",
     answerOptions: [
-      { answerText: "1", isCorrect: false },
+      { answerText: "It is a comparison sorting algorithm.", isCorrect: false },
+      {
+        answerText:
+          "The unsorted array is divided into sublists, which are in turn divided into more sublists",
+        isCorrect: true,
+      },
+      {
+        answerText:
+          "The unsorted array is divided into sublists, each sublist is then sorted recursively by re-applying the algorithm.",
+        isCorrect: false,
+      },
+      { answerText: "All of the above statements are true", isCorrect: false },
+    ],
+  },
+
+  {
+    questionText:
+      "The following two lists are to be merged, which element first goes into the new merged list? \n" +
+      "List 1 --> " +
+      "2 4 7 9 " +
+      "\nList 2 --> " +
+      "1 6 8 12 ",
+    answerOptions: [
+      { answerText: "9", isCorrect: false },
+      {
+        answerText: "1",
+        isCorrect: true,
+      },
+      {
+        answerText: "2",
+        isCorrect: false,
+      },
       { answerText: "4", isCorrect: false },
-      { answerText: "6", isCorrect: false },
-      { answerText: "7", isCorrect: true },
+    ],
+  },
+
+  {
+    questionText:
+      "How many passes does an insertion sort algorithm consist of?",
+    answerOptions: [
+      { answerText: "N", isCorrect: false },
+      {
+        answerText: "N-1",
+        isCorrect: true,
+      },
+      {
+        answerText: "N+1",
+        isCorrect: false,
+      },
+      { answerText: "N2", isCorrect: false },
+    ],
+  },
+
+  {
+    questionText:
+      "What is the average case running time of an insertion sort algorithm?",
+    answerOptions: [
+      { answerText: "O(N)", isCorrect: false },
+      {
+        answerText: "O(N log N)",
+        isCorrect: false,
+      },
+      {
+        answerText: "O(log N)",
+        isCorrect: false,
+      },
+      { answerText: "O(N2)", isCorrect: true },
+    ],
+  },
+
+  {
+    questionText:
+      "Partition a list A[] into two non-empty parts. in left part the values should be:",
+    answerOptions: [
+      { answerText: "A [ ] <= pivot", isCorrect: true },
+      {
+        answerText: "A[] >= pivot",
+        isCorrect: false,
+      },
+      {
+        answerText: "A [ ] > pivot",
+        isCorrect: false,
+      },
+      { answerText: "A [ ] < pivot", isCorrect: false },
+    ],
+  },
+
+  {
+    questionText: "The data structure used for Depth First Algorithm is",
+    answerOptions: [
+      { answerText: "Stack", isCorrect: true },
+      {
+        answerText: "Queue",
+        isCorrect: false,
+      },
+      {
+        answerText: "Both stack and queue",
+        isCorrect: false,
+      },
+      { answerText: "None of these", isCorrect: false },
+    ],
+  },
+
+  {
+    questionText: "The data structure used for Breadth First Algorithm is",
+    answerOptions: [
+      { answerText: "Stack", isCorrect: false },
+      {
+        answerText: "Queue",
+        isCorrect: true,
+      },
+      {
+        answerText: "Both stack and queue",
+        isCorrect: false,
+      },
+      { answerText: "None of these", isCorrect: false },
+    ],
+  },
+
+  {
+    questionText:
+      "The following numbers are inserted into an empty binary search tree in the given order: 20,10, 1, 3, 5, 15, 12, 16,34,87,35. The height of the binary search tree, respectively, is.",
+    answerOptions: [
+      { answerText: "3", isCorrect: false },
+      {
+        answerText: "4",
+        isCorrect: true,
+      },
+      {
+        answerText: "8",
+        isCorrect: false,
+      },
+      { answerText: "9", isCorrect: false },
+    ],
+  },
+
+  {
+    questionText:
+      "If this tree is used for sorting, then new no 8 should be placed as the \n" +
+      "               23\n" +
+      "            /       \\\n" +
+      "        11            27\n" +
+      "     /     \\         /\n" +
+      "   7         17    25\n" +
+      " /  \\       /\n" +
+      "6    9    14",
+    answerOptions: [
+      { answerText: "Left child of the node labeled 6", isCorrect: false },
+      {
+        answerText: "Left child of the node labeled 9",
+        isCorrect: true,
+      },
+      {
+        answerText: "Right child of the node labeled 14",
+        isCorrect: false,
+      },
+      { answerText: "Right child of the node labeled 6", isCorrect: false },
+    ],
+  },
+
+  {
+    questionText:
+      "In Bubble sort, How many passes/scans will go through a list of 10 elements?",
+    answerOptions: [
+      { answerText: "3", isCorrect: false },
+      {
+        answerText: "9",
+        isCorrect: true,
+      },
+      {
+        answerText: "5",
+        isCorrect: false,
+      },
+      { answerText: "7", isCorrect: false },
+    ],
+  },
+
+  {
+    questionText:
+      "Considering this Binary search tree, if you want to delete node 14 \n" +
+      "               23\n" +
+      "            /       \\\n" +
+      "        11            27\n" +
+      "     /     \\         /\n" +
+      "   7         17    25\n" +
+      " /  \\       /\n" +
+      "6    9    14",
+    answerOptions: [
+      { answerText: "Delete node 17 first and move 14 up", isCorrect: false },
+      {
+        answerText: "simply delete node 14 as it is a leaf node",
+        isCorrect: true,
+      },
+      {
+        answerText:
+          "find leftmost node of right subtree of node 14 and swap value and then delete 14",
+        isCorrect: false,
+      },
+    ],
+  },
+
+  {
+    questionText:
+      "Considering this Binary search tree, if you want to delete node 11 \n" +
+      "               23\n" +
+      "            /       \\\n" +
+      "        11            27\n" +
+      "     /     \\         /\n" +
+      "   7         17    25\n" +
+      " /  \\       /\n" +
+      "6    9    14",
+    answerOptions: [
+      { answerText: "Delete node 11 first and move 17 up", isCorrect: false },
+      {
+        answerText: "simply delete node 11 as it is a leaf node",
+        isCorrect: false,
+      },
+      {
+        answerText:
+          "find leftmost node of right subtree of node 11 which is 14 and swap value (11 <--> 14) and then delete 11",
+        isCorrect: true,
+      },
     ],
   },
 ];

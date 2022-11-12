@@ -128,15 +128,20 @@ const PathfindingVisualizer = () => {
 
   return (
     <div className="array-container-bfs-dfs">
-      <button onClick={() => visualizeDFSBFS("dfs")}>
-        Visualize DFS's Algorithm
-      </button>
-      <button onClick={() => visualizeDFSBFS("bfs")}>
-        Visualize BFS's Algorithm
-      </button>
-      <button onClick={() => visualizeDijkstra()}>
-        Visualize Dijkstra Algorithm
-      </button>
+      <div style={{ paddingBottom: "30px" }}>
+        <button className="button2" onClick={() => visualizeDFSBFS("dfs")}>
+          Visualize DFS's Algorithm
+        </button>
+        <button className="button2" onClick={() => visualizeDFSBFS("bfs")}>
+          Visualize BFS's Algorithm
+        </button>
+        <button className="button2" onClick={() => visualizeDijkstra()}>
+          Visualize Dijkstra Algorithm
+        </button>
+        <button className="button2" onClick={() => getNodes()}>
+          Clear Grid
+        </button>
+      </div>
       <div className="grid">
         {nodes.map((row, rowId) => {
           return (

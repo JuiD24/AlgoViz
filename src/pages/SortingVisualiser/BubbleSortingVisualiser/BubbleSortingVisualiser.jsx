@@ -99,8 +99,9 @@ const BubbleSortingVisualiser = () => {
   const bubbleSort = () => {
     const allSteps = getBubbleSortAnimations(array);
     setAllsteps(allSteps);
-
+    document.getElementById("vol").disabled = true;
     setIsPressed(true);
+    // console.log(document.getElementById("vol").value);
     const arraySteps = allSteps[0];
     const colorSteps = allSteps[1];
     const arrayBars = document.getElementsByClassName("array-bar");
@@ -116,8 +117,9 @@ const BubbleSortingVisualiser = () => {
 
           if (i == arraySteps.length - 1) {
             setIsPressed(false);
+            document.getElementById("vol").disabled = false;
           }
-        }, i * ANIMATION_SPEED_MS);
+        }, i * document.getElementById("vol").value);
       }
     }
     // const animations = getBubbleSortAnimations(array);
@@ -147,7 +149,10 @@ const BubbleSortingVisualiser = () => {
 
   return (
     <div className="array-container">
-      <div>
+      <div style={{ paddingBottom: "30px" }}>
+        <input type="range" id="vol" name="vol" min="8" max="800" />
+      </div>
+      <div style={{ paddingBottom: "30px", height: "30px" }}>
         {array.map((value, idx) => (
           <div
             className="array-bar"

@@ -8,7 +8,7 @@
 }
 
 .main-container {
-  display: flex;
+  display: contents;
   gap: 5rem;
 }
 main {

@@ -2,7 +2,7 @@ import "./App.css";
 import MainDash from "./components/MainDash/MainDash";
 import Sidebar from "./components/Sidebar/Sidebar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Quiz from "./pages/Quiz";
+import Quiz1 from "./pages/Quiz/Quiz1";
 import MergeSortingVisualiser from "./pages/SortingVisualiser/MergeSortingVisualiser/MergeSortingVisualiser";
 import BubbleSortingVisualiser from "./pages/SortingVisualiser/BubbleSortingVisualiser/BubbleSortingVisualiser";
 import SelectionSortingVisualiser from "./pages/SortingVisualiser/SelectionSortingVisualiser/SelectionSortingVisualiser";
@@ -17,6 +17,11 @@ import BinarySearchTreeVisualiser, {
   BinarySearchTree,
 } from "./pages/BinaryTreeVisualiser/BinarySearchTreeVisualiser/BinarySearchTreeVisualiser";
 import QuickSortLearning from "./pages/SortingLearning/QuickSortLearning/QuickSortLearning";
+import BFSLearning from "./pages/PathFindingLearning/BFSLearning";
+import DFSLearning from "./pages/PathFindingLearning/DFSLearning";
+import BSTLearning from "./pages/TreeLearning/BSTLearning";
+import Quiz2 from "./pages/Quiz/Quiz2";
+import Analytics from "./pages/Analytics";
 
 function App() {
   return (
@@ -34,7 +39,11 @@ function App() {
               />
               <Route path="/learn/insert" element={<InsertionSortLearning />} />
               <Route path="/learn/quick" element={<QuickSortLearning />} />
-              <Route path="/q1" element={<Quiz />} />
+              <Route path="/learn/bfs" element={<BFSLearning />} />
+              <Route path="/learn/dfs" element={<DFSLearning />} />
+              <Route path="/learn/bst" element={<BSTLearning />} />
+              <Route path="/q1" element={<Quiz1 />} />
+              <Route path="/q2" element={<Quiz2 />} />
               <Route
                 path="/visualiser/merge"
                 element={<MergeSortingVisualiser />}
@@ -63,6 +72,7 @@ function App() {
                 path="/visualiser/bst"
                 element={<BinarySearchTreeVisualiser />}
               />
+              <Route path="/analytics" element={<Analytics />} />
             </Routes>
           </Sidebar>
         </Router>

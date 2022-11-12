@@ -4,12 +4,13 @@ import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
 
 const SidebarMenu = ({ item }) => {
-  const [isSubMenuOpen, setisSubMenuOpen] = useState(false);
+  const [isSubMenuOpen, setisSubMenuOpen] = useState(true);
 
   const toggelsubMenu = () => setisSubMenuOpen(!isSubMenuOpen);
   return (
     <>
-      <div className="submenu" onClick={toggelsubMenu}>
+      {/* onClick={toggelsubMenu} */}
+      <div className="submenu">
         <div className="submenu-item">
           <item.icon />
           <span>{item.heading}</span>

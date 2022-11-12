@@ -107,6 +107,7 @@ const QuickSortingVisualiser = () => {
     setAllsteps(allSteps);
 
     setIsPressed(true);
+    document.getElementById("vol").disabled = true;
     const arraySteps = allSteps[0];
     const colorSteps = allSteps[1];
     const arrayBars = document.getElementsByClassName("array-bar");
@@ -122,8 +123,9 @@ const QuickSortingVisualiser = () => {
 
           if (i == arraySteps.length - 1) {
             setIsPressed(false);
+            document.getElementById("vol").disabled = false;
           }
-        }, i * ANIMATION_SPEED_MS);
+        }, i * document.getElementById("vol").value);
       }
     }
 
@@ -157,7 +159,10 @@ const QuickSortingVisualiser = () => {
 
   return (
     <div className="array-container">
-      <div>
+      <div style={{ paddingBottom: "30px" }}>
+        <input type="range" id="vol" name="vol" min="8" max="800" />
+      </div>
+      <div style={{ paddingBottom: "30px", height: "30px" }}>
         {array.map((value, idx) => (
           <div
             className="array-bar"
