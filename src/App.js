@@ -30,7 +30,7 @@ function App() {
         <Router>
           <Sidebar>
             <Routes>
-              <Route path="/" element={<MainDash />} />
+              <Route path="/AlgoViz" element={<MainDash />} />
               <Route path="/learn/bubble" element={<BubbleSortLearning />} />
               <Route path="/learn/merge" element={<MergeSortLearning />} />
               <Route
